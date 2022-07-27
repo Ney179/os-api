@@ -21,7 +21,7 @@ public class OSDTO implements Serializable {
 	private LocalDateTime dataAbertura;
 	
 	@JsonFormat(pattern = "dd/MM/yyyy HH:mm")
-	private LocalDateTime dtaFechamento;
+	private LocalDateTime dataFechamento;
 	private Integer prioridade;
 	
 	@NotEmpty(message = "O campo OBSERVAÇÔES é requerido")
@@ -38,7 +38,7 @@ public class OSDTO implements Serializable {
 		super();
 		this.id = obj.getId();
 		this.dataAbertura = obj.getDataAbertura();
-		this.dtaFechamento = obj.getDataFechamento();
+		this.dataFechamento = obj.getDataFechamento();
 		this.prioridade = obj.getPrioridade().getCod();
 		this.observacoes = obj.getObservacoes();
 		this.status = obj.getStatus().getCod();
@@ -63,11 +63,11 @@ public class OSDTO implements Serializable {
 	}
 
 	public LocalDateTime getDtaFechamento() {
-		return dtaFechamento;
+		return dataFechamento;
 	}
 
 	public void setDtaFechamento(LocalDateTime dtaFechamento) {
-		this.dtaFechamento = dtaFechamento;
+		this.dataFechamento = dtaFechamento;
 	}
 
 	public Prioridade getPrioridade() {

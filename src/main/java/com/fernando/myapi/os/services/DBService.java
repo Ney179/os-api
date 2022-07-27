@@ -35,7 +35,7 @@ public class DBService {
 		Cliente c3 = new Cliente(null, "Larissa Meneguel", "840.764.300-93", "(16) 9 9863-9658");
 		Cliente c4 = new Cliente(null, "Sabrina Lima", "164.837.840-40", "(16) 9 9836-9632");
 		
-		OS os1 = new OS(null, Prioridade.ALTA, "Testes create OD", Status.ANDAMENTO, t1, c1);
+		OS os1 = new OS(null, Prioridade.ALTA, "Testes create OD", Status.ENCERRADO, t1, c1);
 
 		tecnicoRepository.saveAll(Arrays.asList(t1, t2));
 		clienteRepository.saveAll(Arrays.asList(c1, c2, c3, c4));

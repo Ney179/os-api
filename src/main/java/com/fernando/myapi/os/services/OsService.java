@@ -69,6 +69,6 @@ public class OsService {
 			newObj.setDtaFechamento(LocalDateTime.now());
 		}
 		
-		return osRepository.save(newObj);
+		return osRepository.save(newObj); 
 	}
 }

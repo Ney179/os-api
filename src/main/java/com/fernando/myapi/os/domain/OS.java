@@ -20,10 +20,10 @@ public class OS {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	
-	//@JsonFormat(pattern = "dd/MM/yyy HH:mm")
+	@JsonFormat(pattern = "dd/MM/yyy HH:mm")
 	private LocalDateTime dataAbertura;
 	
-	//@JsonFormat(pattern = "dd/MM/yyyy HH:mm")
+	@JsonFormat(pattern = "dd/MM/yyyy HH:mm")
 	private LocalDateTime dataFechamento;
 	private Integer prioridade;
 	private String observacoes;
