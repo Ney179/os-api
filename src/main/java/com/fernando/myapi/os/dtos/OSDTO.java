@@ -5,6 +5,7 @@ import java.time.LocalDateTime;
 
 import javax.validation.constraints.NotEmpty;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fernando.myapi.os.domain.OS;
 import com.fernando.myapi.os.domain.enums.Prioridade;
 import com.fernando.myapi.os.domain.enums.Status;
@@ -15,7 +16,11 @@ public class OSDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	private Integer id;
+	
+	@JsonFormat(pattern = "dd/MM/yyyy HH:mm")
 	private LocalDateTime dataAbertura;
+	
+	@JsonFormat(pattern = "dd/MM/yyyy HH:mm")
 	private LocalDateTime dtaFechamento;
 	private Integer prioridade;
 	
